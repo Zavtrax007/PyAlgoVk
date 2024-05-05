@@ -1,4 +1,6 @@
 def sort_shell(arr: list):
+    if type(arr) is not list:
+        raise TypeError('Array must be list')
     n = len(arr)
     gap = len(arr) // 2 + 1
     while gap > 0:
@@ -13,5 +15,4 @@ def sort_shell(arr: list):
     return arr
 
 
-a = [31, 23, 14, 7, 3, 1, 238, 234, 65]
-print(sort_shell(a))
+
