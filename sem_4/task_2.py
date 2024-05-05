@@ -1,4 +1,6 @@
 def feedAnimals(animals, food):
+    if type(animals) is not list or type(food) is not list:
+        raise TypeError('Arrays must be list')
     if len(animals) == 0 or len(food) == 0:
         return 0
     animals.sort()
@@ -12,7 +14,5 @@ def feedAnimals(animals, food):
     return count
 
 
-a = [1, 2, 2]
-b = [7, 1]
-print(feedAnimals(a, b))
+
 
