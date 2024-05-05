@@ -2,6 +2,8 @@ from operator import contains
 
 
 def extraLetter(a, b):
+    if type(a) is not str or type(b) is not str:
+        raise TypeError('a and b must be str')
     a_dict = {}
     for i in range(len(a)):
         a_dict[a[i]] = 0
@@ -17,8 +19,3 @@ def extraLetter(a, b):
             continue
         return b[i]
     return ''
-
-
-a = 'bbabc'
-b = 'bafbcb'
-print(extraLetter(a, b))
