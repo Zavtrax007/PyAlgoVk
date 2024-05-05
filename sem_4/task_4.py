@@ -6,6 +6,9 @@ def twoSum(arr, target):
         raise TypeError('Arrays must be list')
     if type(target) is not int:
         raise TypeError('target must be integer')
+    for i in range(len(arr)):
+        if type(arr[i]) is not int:
+            raise TypeError('Array  must contain integer')
     a_dict = {}
     for i in range(len(arr)):
         a_dict[arr[i]] = i

@@ -11,3 +11,4 @@ class TestFeedAnimals(unittest.TestCase):
         self.assertRaises(TypeError, feedAnimals, 1.5, [1, 2])
         self.assertRaises(TypeError, feedAnimals, [2, 1], 'asd')
         self.assertRaises(TypeError, feedAnimals, 1, [])
+        self.assertRaises(TypeError, feedAnimals, [1.6, 1], [2])
