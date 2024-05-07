@@ -8,7 +8,7 @@ c = []
 d = [7, 6, 3, 1, 45, 5, 1]
 
 
-class TestSortShell(unittest.TestCase):
+class TestBuildTree(unittest.TestCase):
     def testArea(self):
         self.assertEqual(dept_traversal(buildTree(b, 0), a), [7, 9, 16, 8, 3, 11, 1])
         self.assertEqual(dept_traversal(buildTree(d, 0), c), [1, 6, 45, 7, 5, 3, 1])

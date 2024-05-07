@@ -4,7 +4,7 @@ from task_4 import maxMinMulti
 from Tree_al import Node, dept_traversal
 
 
-class TestSortShell(unittest.TestCase):
+class TestMaxMinMulti(unittest.TestCase):
     def testArea(self):
         self.assertEqual(maxMinMulti([10, 6, 13, 3, 7, 12, 14]), 42)
         self.assertEqual(maxMinMulti([10, 6, 13, 3, 7, 12]), 39)

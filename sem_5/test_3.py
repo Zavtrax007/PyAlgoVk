@@ -4,7 +4,7 @@ from task_3 import minDept
 from Tree_al import Node, dept_traversal
 
 
-class TestSortShell(unittest.TestCase):
+class TestMinDept(unittest.TestCase):
     def testArea(self):
         self.assertEqual(minDept(buildTree([3, 7, 8, 1, 2, 6, 9], 0)), 3)
         self.assertEqual(minDept(buildTree([3, 7, 8, 1, 2, 6], 0)), 2)
