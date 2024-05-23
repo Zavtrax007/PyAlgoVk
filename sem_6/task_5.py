@@ -1,4 +1,9 @@
 def maxProfit(prices):
+    if type(prices) is not list:
+        raise TypeError('prices must be list')
+    for i in range(len(prices)):
+        if type(prices[i]) is not int or prices[i] < 1:
+            raise ValueError('prices must contain positive integers')
     profit = 0
     min_price = prices[0]
     for currentPriceIndex in range(1, len(prices)):
