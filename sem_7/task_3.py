@@ -2,7 +2,7 @@ def isTree(graph, start):
     if type(graph) is not dict:
         raise TypeError('graph must be dict')
     if start not in graph:
-        raise TypeError('graph must contain list')
+        raise TypeError('graph must contain start')
 
     visited = []
     queue = [start]
