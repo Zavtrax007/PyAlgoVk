@@ -11,6 +11,6 @@ class TestCountSeq(unittest.TestCase):
         self.assertEqual(isTree(gr1, 1), False)
 
     def test_types(self):
-        self.assertRaises(TypeError, isTree, 1.5, 3)
+        self.assertRaises(TypeError, isTree, 1.6, 3)
         self.assertRaises(TypeError, isTree, [1, 3, 4, 5], 3)
         self.assertRaises(TypeError, isTree, gr, 100)
