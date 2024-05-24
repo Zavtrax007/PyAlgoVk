@@ -7,14 +7,14 @@ def dfs(graph, start, parent, visited):
     return False
 
 
-def has_cycle(graph):
+def hasCycle(graph):
+    if type(graph) is not dict:
+        raise TypeError('graph must be dict')
     visited = []
     for start in graph:
         if start not in visited:
             if dfs(graph, start, None, visited):
                 return True
-    return True
+    return False
 
 
-graph1 = {1: [2], 2: [1, 3], 3: [4, 2], 4: [3, 5], 5: [4]}
-print(has_cycle(graph1))
