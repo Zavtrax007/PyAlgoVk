@@ -1,7 +1,7 @@
 import sys
 
 
-def vertexWithMinWeight( ):
+def vertexWithMinWeight():
     index = ''
     dist_min = 0
 

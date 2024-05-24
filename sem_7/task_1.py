@@ -7,7 +7,7 @@ def dfs(graph, start, visited, color):
 
 def findConnectedComp(graph):
     if type(graph) is not dict:
-        raise TypeError('graph  must be dict')
+        raise TypeError('graph must be dict')
     visited = {}
     for i in graph:
         visited[i] = 0

@@ -9,7 +9,7 @@ def dfs(graph, start, parent, visited):
 
 def hasCycle(graph):
     if type(graph) is not dict:
-        raise TypeError('graph must  be dict')
+        raise TypeError('graph must be dict')
     visited = []
     for start in graph:
         if start not in visited:
